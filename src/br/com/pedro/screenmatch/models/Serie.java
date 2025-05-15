@@ -1,4 +1,4 @@
-package br.com.pedro.screenmatch.modelos;
+package br.com.pedro.screenmatch.models;
 
 public class Serie extends Title {
   private int seasons;
@@ -38,7 +38,8 @@ public class Serie extends Title {
     this.minutesPerEpisode = minutesPerEpisode;
   }
 
+  @Override
   public int getTimeMovie() {
-    return super.getTimeMovie();
+    return seasons * episodesPerSeason * minutesPerEpisode;
   }
 }

@@ -1,4 +1,4 @@
-package br.com.pedro.screenmatch.modelos;
+package br.com.pedro.screenmatch.models;
 
 public class Movie extends Title {
   private String director;

@@ -1,4 +1,4 @@
-package br.com.pedro.screenmatch.modelos;
+package br.com.pedro.screenmatch.models;
 
 public class Title {
   private String name;
