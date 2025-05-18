@@ -1,15 +1,20 @@
+import br.com.pedro.screenmatch.calculations.RecommendationFilter;
 import br.com.pedro.screenmatch.calculations.TimeCalculator;
+import br.com.pedro.screenmatch.models.Episode;
 import br.com.pedro.screenmatch.models.Movie;
 import br.com.pedro.screenmatch.models.Serie;
 
 public class Main {
   public static void main(String[] args) {
+    RecommendationFilter filter = new RecommendationFilter();
+
     Movie filme = new Movie();
     filme.setName("Projeto X");
     filme.setYearOfRelease(2006);
     filme.setDirector("Lebron James");
     filme.setTimeMovie(120);
     filme.showTechnicalData();
+    filter.filter(filme);
 
     Serie Pokemon = new Serie();
     Pokemon.setName("Pokemon");
@@ -31,5 +36,12 @@ public class Main {
     calculator.includes(Tons);
     calculator.includes(Pokemon);
     System.out.println("Tempo necessáro para finalizar a lista: " + calculator.getTotalTime());
+
+    Episode episode = new Episode();
+    episode.setNumber(1);
+    episode.setSerie(Pokemon);
+    episode.setFullViews(300);
+    filter.filter(episode);
+
   }
 }
