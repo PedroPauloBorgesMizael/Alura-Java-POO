@@ -1,7 +1,9 @@
-import br.com.pedro.animal.Cachorro;
-import br.com.pedro.animal.Gato;
+package br.com.pedro.animal;
 
-public class MainAnimal {
+import br.com.pedro.animal.models.Cachorro;
+import br.com.pedro.animal.models.Gato;
+
+public class Main {
     public static void main(String[] args) {
         Cachorro bilu = new Cachorro();
         bilu.emitirSom();

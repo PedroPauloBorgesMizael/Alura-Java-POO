@@ -1,6 +1,6 @@
-package br.com.pedro.animal;
+package br.com.pedro.animal.models;
 
-public class Cachorro extends Animal{
+public class Cachorro extends Animal {
 
     @Override
     public void emitirSom() {

@@ -1,4 +1,4 @@
-package br.com.pedro.carro;
+package br.com.pedro.carro.models;
 
 public class Carro {
   private String model;

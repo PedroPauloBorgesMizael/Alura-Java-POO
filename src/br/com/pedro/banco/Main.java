@@ -1,7 +1,9 @@
-import br.com.pedro.banco.ContaBancaria;
-import br.com.pedro.banco.ContaCorrente;
+package br.com.pedro.banco;
 
-public class MainBanco {
+import br.com.pedro.banco.models.ContaBancaria;
+import br.com.pedro.banco.models.ContaCorrente;
+
+public class Main {
     public static void main(String[] args) {
         ContaBancaria b1 = new ContaBancaria();
         b1.depositar(200);

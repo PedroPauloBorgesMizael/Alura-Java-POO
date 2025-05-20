@@ -1,4 +1,4 @@
-package br.com.pedro.banco;
+package br.com.pedro.banco.models;
 
 public class ContaBancaria {
     private double saldo;

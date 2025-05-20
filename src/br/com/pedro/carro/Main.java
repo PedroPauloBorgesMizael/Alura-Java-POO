@@ -1,6 +1,8 @@
-import br.com.pedro.carro.ModeloCarro;
+package br.com.pedro.carro;
 
-public class MainCarro {
+import br.com.pedro.carro.models.ModeloCarro;
+
+public class Main {
     public static void main(String[] args) {
         ModeloCarro carro1 = new ModeloCarro("Corolla",2015, 95000, 97000, 99000);
         carro1.showData();

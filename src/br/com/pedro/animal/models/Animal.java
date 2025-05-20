@@ -1,4 +1,4 @@
-package br.com.pedro.animal;
+package br.com.pedro.animal.models;
 
 public class Animal {
 
